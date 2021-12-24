@@ -21,7 +21,7 @@ jobs:
             docker-compose stop
             git fetch && git pull
             docker-compose up --build -d
-        ## - name: Checkout code
+        # - name: Checkout code
         #   uses: actions/checkout@v2
 
         # - name: Login Docker Hub

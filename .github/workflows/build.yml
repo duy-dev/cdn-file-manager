@@ -14,10 +14,10 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          key: ${{ secrets.PRIVATE_KEY }}
           command_timeout: 2m
           script: |
-            cd ~/api/learn-cicd
+            cd ~/api/cdn-file-manager
             docker-compose stop
             git fetch && git pull
             docker-compose up --build -d

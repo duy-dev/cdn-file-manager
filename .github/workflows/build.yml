@@ -15,7 +15,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
-          command_timeout: 2m
+          command_timeout: 200m
           script: |
             cd ~/api/cdn-file-manager
             docker-compose stop
